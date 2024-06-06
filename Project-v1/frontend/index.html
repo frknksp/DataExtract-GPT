@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-container">
+        <h2>Rapor seçiniz veya Yazınız</h2>
+        <textarea id="message" placeholder="Buraya bir rapor yazabilir veya dosya (txt,pdf,docx) seçerek devam edebilirsiniz."></textarea>
+        <div class="file-container">
+          <input type="file" id="input" accept=".txt,.doc,.docx,.pdf" />
+          <label for="input" class="file-label">Dosya Seçin</label>
+        </div>
+      </div>
+
+      <div class="send-button-container">
+        <button id="button">Çevir</button>
+      </div>
+
+      <div class="result-container">
+        <h2>İstatistiki çıktılar</h2>
+        <textarea id="result" class="result-textarea" readonly></textarea>
+        <button id="downloadButton">JSON indir</button>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.5/mammoth.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
